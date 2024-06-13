@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/carousel-img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: blur(5px);
+}
+
+.container {
+    height: 180px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.clock span {
+    font-size: 80px;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    color: greenyellow;
+}
+
+.clock span::after {
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+    bottom: -30px;
+    left: -70px;
+    position: relative;
+    transform: translate(-50%);
+}
+
+#hours::after {
+    content: "Hours";
+}
+
+#minutes::after {
+    content: "Minutes";
+}
+
+#seconds::after {
+    content: "Seconds";
+}
